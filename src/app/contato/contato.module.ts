@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ContatoRoutingModule } from './contato-routing.module';
 import { ContatoComponent } from './contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
-//import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -13,8 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ContatoRoutingModule,
-    ReactiveFormsModule,
-   // NgxMaskModule.forRoot()
+    ReactiveFormsModule
   ]
 })
 export class ContatoModule { }
