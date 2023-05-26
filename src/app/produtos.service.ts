@@ -5,15 +5,18 @@ import { IProduto, produtos } from './produtos';
   providedIn: 'root'
 })
 export class ProdutosService {
-  produtos: IProduto[] = produtos;
+  private produtos: IProduto[] 
 
-  constructor() { }
+  constructor() { 
+    this.produtos = produtos;
+  }
 
   getAll(){
     return this.produtos;
   }
   getOne(produtoId: number){
-    return this.produtos.find(produto => produto.id = produtoId);
+    console.log("produtos", produtos);
+    return this.produtos.find(produto => produto.id == produtoId);
   }
 
 }

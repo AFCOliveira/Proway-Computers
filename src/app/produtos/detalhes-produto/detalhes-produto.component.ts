@@ -24,7 +24,9 @@ export class DetalhesProdutoComponent implements OnInit {
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const produtoId = Number(routeParams.get("id"));
+    console.log(produtoId);
     this.produto = this.produtosService.getOne(produtoId);
+    console.log(this.produto);
   }
 
   adicionarAoCarrinho() {
